@@ -27,6 +27,8 @@ Partial Class fmrThemXe
         Me.btnThem = New System.Windows.Forms.Button()
         Me.btnDong = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtDiaChi = New System.Windows.Forms.Label()
         Me.txrHoTen = New System.Windows.Forms.Label()
@@ -36,14 +38,12 @@ Partial Class fmrThemXe
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.cbHieuXe = New System.Windows.Forms.ComboBox()
-        Me.dtbNgayTiepNhan = New System.Windows.Forms.DateTimePicker()
+        Me.dtpNgayTiepNhan = New System.Windows.Forms.DateTimePicker()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtBienSo = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -107,15 +107,33 @@ Partial Class fmrThemXe
         Me.Panel3.Size = New System.Drawing.Size(376, 243)
         Me.Panel3.TabIndex = 2
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(32, 30)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(107, 16)
+        Me.Label7.TabIndex = 16
+        Me.Label7.Text = "Mã khách hàng:"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(161, 30)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(210, 24)
+        Me.TextBox1.TabIndex = 15
+        '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(32, 146)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(92, 16)
+        Me.Label9.Size = New System.Drawing.Size(96, 16)
         Me.Label9.TabIndex = 14
-        Me.Label9.Text = "Số điện thoại"
+        Me.Label9.Text = "Số điện thoại:"
         '
         'txtDiaChi
         '
@@ -175,7 +193,7 @@ Partial Class fmrThemXe
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.cbHieuXe)
-        Me.Panel2.Controls.Add(Me.dtbNgayTiepNhan)
+        Me.Panel2.Controls.Add(Me.dtpNgayTiepNhan)
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Controls.Add(Me.Label5)
         Me.Panel2.Controls.Add(Me.Label4)
@@ -195,13 +213,13 @@ Partial Class fmrThemXe
         Me.cbHieuXe.Size = New System.Drawing.Size(210, 23)
         Me.cbHieuXe.TabIndex = 10
         '
-        'dtbNgayTiepNhan
+        'dtpNgayTiepNhan
         '
-        Me.dtbNgayTiepNhan.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dtbNgayTiepNhan.Location = New System.Drawing.Point(157, 111)
-        Me.dtbNgayTiepNhan.Name = "dtbNgayTiepNhan"
-        Me.dtbNgayTiepNhan.Size = New System.Drawing.Size(210, 24)
-        Me.dtbNgayTiepNhan.TabIndex = 9
+        Me.dtpNgayTiepNhan.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpNgayTiepNhan.Location = New System.Drawing.Point(157, 111)
+        Me.dtpNgayTiepNhan.Name = "dtpNgayTiepNhan"
+        Me.dtpNgayTiepNhan.Size = New System.Drawing.Size(210, 24)
+        Me.dtpNgayTiepNhan.TabIndex = 9
         '
         'Label6
         '
@@ -252,24 +270,6 @@ Partial Class fmrThemXe
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Thông tin xe"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(161, 30)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(210, 24)
-        Me.TextBox1.TabIndex = 15
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(32, 30)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(107, 16)
-        Me.Label7.TabIndex = 16
-        Me.Label7.Text = "Mã khách hàng:"
-        '
         'fmrThemXe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -303,7 +303,7 @@ Partial Class fmrThemXe
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel2 As Panel
     Friend WithEvents cbHieuXe As ComboBox
-    Friend WithEvents dtbNgayTiepNhan As DateTimePicker
+    Friend WithEvents dtpNgayTiepNhan As DateTimePicker
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label

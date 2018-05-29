@@ -154,4 +154,67 @@ Public Class XeDAL
         End Using
         Return New Result(True) ' thanh cong
     End Function
+
+    Public Function update(Xe As XeDTO) As Result
+
+        Dim query As String = String.Empty
+        query &= " UPDATE [tblXe] SET"
+        query &= " [MaHieuXe] = @MaHieuXe "
+        query &= " [NgayTiepNhan] = @NgayTiepNhan"
+        query &= " WHERE "
+        query &= " [BienSo] = @BienSo "
+
+        Using conn As New SqlConnection(connectionString)
+            Using comm As New SqlCommand()
+                With comm
+                    .Connection = conn
+                    .CommandType = CommandType.Text
+                    .CommandText = query
+                    .Parameters.AddWithValue("@BienSoXe", Xe.BienSo)
+                    .Parameters.AddWithValue("@MaLoaiHieuXe", Xe.LoaiHieuXe)
+                    .Parameters.AddWithValue("@NgayTiepNhan", Xe.NgayTiepNhan)
+                End With
+                Try
+                    conn.Open()
+                    comm.ExecuteNonQuery()
+                Catch ex As Exception
+                    Console.WriteLine(ex.StackTrace)
+                    conn.Close()
+                    System.Console.WriteLine(ex.StackTrace)
+                    Return New Result(False, "Cập nhật Xe không thành công", ex.StackTrace)
+                End Try
+            End Using
+        End Using
+        Return New Result(True) ' thanh cong
+    End Function
+
+    Public Function delete(BienSo As String) As Result
+
+        Dim query As String = String.Empty
+        query &= " DELETE FROM [tblXe] "
+        query &= " WHERE "
+        query &= " [BienSo] = @BienSo "
+
+        Using conn As New SqlConnection(connectionString)
+            Using comm As New SqlCommand()
+                With comm
+                    .Connection = conn
+                    .CommandType = CommandType.Text
+                    .CommandText = query
+                    .Parameters.AddWithValue("@BienSo", BienSo)
+                End With
+                Try
+                    conn.Open()
+                    comm.ExecuteNonQuery()
+                Catch ex As Exception
+                    Console.WriteLine(ex.StackTrace)
+                    conn.Close()
+                    System.Console.WriteLine(ex.StackTrace)
+                    Return New Result(False, "Xóa Xe không thành công", ex.StackTrace)
+                End Try
+            End Using
+        End Using
+        Return New Result(True)  ' thanh cong
+    End Function
+
 End Class

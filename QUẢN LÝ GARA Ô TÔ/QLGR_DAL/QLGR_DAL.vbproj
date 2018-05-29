@@ -64,6 +64,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoaiHieuXeDAL.vb" />
     <Compile Include="XeDAL.vb" />
     <Compile Include="KhachHangDAL.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

@@ -199,5 +199,19 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QLGR_BUS\QLGR_BUS.vbproj">
+      <Project>{2c1cf3ce-4999-4ea2-b14c-4d7d6ebf1df7}</Project>
+      <Name>QLGR_BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QLGR_DTO\QLGR_DTO.vbproj">
+      <Project>{a8561101-be11-47d2-b9be-c0db9505ff8a}</Project>
+      <Name>QLGR_DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.vbproj">
+      <Project>{50cae960-896f-4b43-9ba5-2abf9e905236}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

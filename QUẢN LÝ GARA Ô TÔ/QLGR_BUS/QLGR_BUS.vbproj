@@ -63,7 +63,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.vb" />
+    <Compile Include="KhachHangBUS.vb" />
+    <Compile Include="LoaiHieuXeBUS.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -79,6 +80,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="XeBUS.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -98,6 +100,20 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QLGR_DAL\QLGR_DAL.vbproj">
+      <Project>{cac49809-e01f-4ff9-ba5b-d0d41c14f285}</Project>
+      <Name>QLGR_DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QLGR_DTO\QLGR_DTO.vbproj">
+      <Project>{a8561101-be11-47d2-b9be-c0db9505ff8a}</Project>
+      <Name>QLGR_DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.vbproj">
+      <Project>{50cae960-896f-4b43-9ba5-2abf9e905236}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
