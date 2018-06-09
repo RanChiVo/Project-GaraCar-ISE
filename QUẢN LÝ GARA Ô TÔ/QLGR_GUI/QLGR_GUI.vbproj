@@ -72,65 +72,77 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="fmrBaoCaoDanhThu.Designer.vb">
-      <DependentUpon>fmrBaoCaoDanhThu.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fmrBaoCaoDanhThu.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fmrBaoCaoTon.Designer.vb">
-      <DependentUpon>fmrBaoCaoTon.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fmrBaoCaoTon.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fmrPhieuSuaChua.Designer.vb">
-      <DependentUpon>fmrPhieuSuaChua.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fmrPhieuSuaChua.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="fmrPhieuThuTien.Designer.vb">
-      <DependentUpon>fmrPhieuThuTien.vb</DependentUpon>
-    </Compile>
-    <Compile Include="fmrPhieuThuTien.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="fmrQLHieuXe.Designer.vb">
       <DependentUpon>fmrQLHieuXe.vb</DependentUpon>
     </Compile>
     <Compile Include="fmrQLHieuXe.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmrQLPhieuSuaChua.Designer.vb">
-      <DependentUpon>fmrQLPhieuSuaChua.vb</DependentUpon>
+    <Compile Include="frmBaoCaoDanhThu.Designer.vb">
+      <DependentUpon>frmBaoCaoDanhThu.vb</DependentUpon>
     </Compile>
-    <Compile Include="fmrQLPhieuSuaChua.vb">
+    <Compile Include="frmBaoCaoDanhThu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmrQLTienCong.Designer.vb">
-      <DependentUpon>fmrQLTienCong.vb</DependentUpon>
+    <Compile Include="frmBaoCaoTon.Designer.vb">
+      <DependentUpon>frmBaoCaoTon.vb</DependentUpon>
     </Compile>
-    <Compile Include="fmrQLTienCong.vb">
+    <Compile Include="frmBaoCaoTon.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmrQLVatTuPhuTung.Designer.vb">
-      <DependentUpon>fmrQLVatTuPhuTung.vb</DependentUpon>
+    <Compile Include="frmPhieuSuaChua.Designer.vb">
+      <DependentUpon>frmPhieuSuaChua.vb</DependentUpon>
     </Compile>
-    <Compile Include="fmrQLVatTuPhuTung.vb">
+    <Compile Include="frmPhieuSuaChua.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmrQLXe.Designer.vb">
-      <DependentUpon>fmrQLXe.vb</DependentUpon>
+    <Compile Include="frmPhieuThuTien.Designer.vb">
+      <DependentUpon>frmPhieuThuTien.vb</DependentUpon>
     </Compile>
-    <Compile Include="fmrQLXe.vb">
+    <Compile Include="frmPhieuThuTien.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmrThemXe.vb">
+    <Compile Include="frmQLHieuXe.Designer.vb">
+      <DependentUpon>frmQLHieuXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLHieuXe.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fmrThemXe.Designer.vb">
-      <DependentUpon>fmrThemXe.vb</DependentUpon>
+    <Compile Include="frmQLPhieuSuaChua.Designer.vb">
+      <DependentUpon>frmQLPhieuSuaChua.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLPhieuSuaChua.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLTienCong.Designer.vb">
+      <DependentUpon>frmQLTienCong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLTienCong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLVatTuPhuTung.Designer.vb">
+      <DependentUpon>frmQLVatTuPhuTung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLVatTuPhuTung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLXe.Designer.vb">
+      <DependentUpon>frmQLXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLXe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemXe.Designer.vb">
+      <DependentUpon>frmThemXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemXe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTraCuuXe.Designer.vb">
+      <DependentUpon>frmTraCuuXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTraCuuXe.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -150,35 +162,41 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="fmrBaoCaoDanhThu.resx">
-      <DependentUpon>fmrBaoCaoDanhThu.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fmrBaoCaoTon.resx">
-      <DependentUpon>fmrBaoCaoTon.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fmrPhieuSuaChua.resx">
-      <DependentUpon>fmrPhieuSuaChua.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="fmrPhieuThuTien.resx">
-      <DependentUpon>fmrPhieuThuTien.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fmrQLHieuXe.resx">
       <DependentUpon>fmrQLHieuXe.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmrQLPhieuSuaChua.resx">
-      <DependentUpon>fmrQLPhieuSuaChua.vb</DependentUpon>
+    <EmbeddedResource Include="frmBaoCaoDanhThu.resx">
+      <DependentUpon>frmBaoCaoDanhThu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmrQLTienCong.resx">
-      <DependentUpon>fmrQLTienCong.vb</DependentUpon>
+    <EmbeddedResource Include="frmBaoCaoTon.resx">
+      <DependentUpon>frmBaoCaoTon.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmrQLVatTuPhuTung.resx">
-      <DependentUpon>fmrQLVatTuPhuTung.vb</DependentUpon>
+    <EmbeddedResource Include="frmPhieuSuaChua.resx">
+      <DependentUpon>frmPhieuSuaChua.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmrQLXe.resx">
-      <DependentUpon>fmrQLXe.vb</DependentUpon>
+    <EmbeddedResource Include="frmPhieuThuTien.resx">
+      <DependentUpon>frmPhieuThuTien.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fmrThemXe.resx">
-      <DependentUpon>fmrThemXe.vb</DependentUpon>
+    <EmbeddedResource Include="frmQLHieuXe.resx">
+      <DependentUpon>frmQLHieuXe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLPhieuSuaChua.resx">
+      <DependentUpon>frmQLPhieuSuaChua.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLTienCong.resx">
+      <DependentUpon>frmQLTienCong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLVatTuPhuTung.resx">
+      <DependentUpon>frmQLVatTuPhuTung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLXe.resx">
+      <DependentUpon>frmQLXe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemXe.resx">
+      <DependentUpon>frmThemXe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTraCuuXe.resx">
+      <DependentUpon>frmTraCuuXe.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -197,7 +215,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QLGR_BUS\QLGR_BUS.vbproj">

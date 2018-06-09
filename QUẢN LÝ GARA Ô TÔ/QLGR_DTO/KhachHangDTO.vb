@@ -1,6 +1,6 @@
 ﻿Public Class KhachHangDTO
 
-    Private strMaKH As Integer
+    Private strMaKH As String
     Private strHoTen As String
     Private strDiaChi As String
     Private strSoDienThoai As String
@@ -8,7 +8,7 @@
 
     Public Sub New()
     End Sub
-    Public Sub New(strMaKH As Integer, strHoTen As String, strDiaChi As String, strSoDienThoai As String, strSoTienNo As Decimal)
+    Public Sub New(strMaKH As String, strHoTen As String, strDiaChi As String, strSoDienThoai As String, strSoTienNo As Decimal)
         Me.strMaKH = strMaKH
         Me.strHoTen = strHoTen
         Me.strDiaChi = strDiaChi
@@ -18,11 +18,11 @@
 
     End Sub
 
-    Public Property MaKH As Integer
+    Public Property MaKH As String
         Get
             Return strMaKH
         End Get
-        Set(value As Integer)
+        Set(value As String)
             strMaKH = value
         End Set
     End Property

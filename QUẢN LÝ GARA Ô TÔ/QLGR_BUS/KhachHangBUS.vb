@@ -2,7 +2,7 @@
 Imports QLGR_DTO
 Imports Utility
 
-Public Class KhachHangBUs
+Public Class KhachHangBUS
     Private KhachHang_DAL As KhachHangDAL
     Public Sub New()
         KhachHang_DAL = New KhachHangDAL()
@@ -10,9 +10,37 @@ Public Class KhachHangBUs
     Public Sub New(connectionString As String)
         KhachHang_DAL = New KhachHangDAL(connectionString)
     End Sub
+
+
     Public Function isValidName(KhachHang_DTO As KhachHangDTO) As Boolean
 
         If (KhachHang_DTO.HoTen.Length < 1) Then
+            Return False
+        End If
+
+        Return True
+    End Function
+
+    Public Function isValidAddress(KhachHang_DTO As KhachHangDTO) As Boolean
+
+        If (KhachHang_DTO.DiaChi.Length < 1) Then
+            Return False
+        End If
+
+        Return True
+    End Function
+    Public Function isValidPhone(KhachHang_DTO As KhachHangDTO) As Boolean
+
+        If (KhachHang_DTO.SoDienThoai.Length < 1) Then
+            Return False
+        End If
+        Return True
+
+    End Function
+
+    Public Function isValidThebalance(KhachHang_DTO As KhachHangDTO) As Boolean
+
+        If (KhachHang_DTO.SoTienNo.ToString().Length < 1) Then
             Return False
         End If
 
@@ -44,8 +72,22 @@ Public Class KhachHangBUs
         '2. insert to DB
         Return KhachHang_DAL.selectALL(listKhachHang)
     End Function
+    Public Function Show() As DataTable
+        Return KhachHang_DAL.FilterData()
+    End Function
+    Public Function buildMaKH(nextMaKH As String) As Result
+        Return KhachHang_DAL.BuildMaKH(nextMaKH)
+    End Function
 
-    Public Function getNextID(ByRef nextID As Integer) As Result
-        Return KhachHang_DAL.getNextID(nextID)
+    Public Overrides Function ToString() As String
+        Return MyBase.ToString()
+    End Function
+
+    Public Overrides Function Equals(obj As Object) As Boolean
+        Return MyBase.Equals(obj)
+    End Function
+
+    Public Overrides Function GetHashCode() As Integer
+        Return MyBase.GetHashCode()
     End Function
 End Class

@@ -80,6 +80,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ThamSoBUS.vb" />
     <Compile Include="XeBUS.vb" />
   </ItemGroup>
   <ItemGroup>

@@ -6,7 +6,7 @@ Imports Utility
 
 
 Public Class LoaiHieuXeDAL
-    Private LoaiHieuXe_DAL As LoaiHieuXeDAL
+
     Private connectionString As String
 
     Public Sub New()
@@ -21,7 +21,7 @@ Public Class LoaiHieuXeDAL
 
         Dim query As String = String.Empty
         query &= "SELECT TOP 1 [MaLoaiHieuXe] "
-        query &= "FROM [tblLoaiXe] "
+        query &= "FROM [tblLOAIHIEUXE] "
         query &= "ORDER BY [MaLoaiHieuXe] DESC "
 
         Using conn As New SqlConnection(connectionString)
@@ -39,7 +39,7 @@ Public Class LoaiHieuXeDAL
                     idOnDB = Nothing
                     If reader.HasRows = True Then
                         While reader.Read()
-                            idOnDB = reader("MaLoaiXe")
+                            idOnDB = reader("MaLoaiHieuXe")
                         End While
                     End If
                     ' new ID = current ID + 1
@@ -58,8 +58,8 @@ Public Class LoaiHieuXeDAL
     Public Function insert(LoaiHieuXe_DTO As LoaiHieuXeDTO) As Result
 
         Dim query As String = String.Empty
-        query &= "INSERT INTO [tblLoaiBienSo] ([MaLoaiHieuXe], [TenLoaiHieuXe])"
-        query &= "VALUES (@MaLoaiBienSo,@TenLoaiHieuXe)"
+        query &= "INSERT INTO [tblLOAIHIEUXE] ([MaLoaiHieuXe], [TenLoaiHieuXe])"
+        query &= "VALUES (@MaLoaiHieuXe,@TenLoaiHieuXe)"
 
         Dim nextID = 0
         Dim result As Result
@@ -76,7 +76,7 @@ Public Class LoaiHieuXeDAL
                     .CommandType = CommandType.Text
                     .CommandText = query
                     .Parameters.AddWithValue("@MaLoaiHieuXe", LoaiHieuXe_DTO.MaHieuXe)
-                    .Parameters.AddWithValue("@MaLoaiHieuXe", LoaiHieuXe_DTO.TenHieuXe)
+                    .Parameters.AddWithValue("@TenLoaiHieuXe", LoaiHieuXe_DTO.TenHieuXe)
                 End With
                 Try
                     conn.Open()
@@ -94,7 +94,7 @@ Public Class LoaiHieuXeDAL
     Public Function update(LoaiHieuXe_DTO As LoaiHieuXeDTO) As Result
 
         Dim query As String = String.Empty
-        query &= " UPDATE [tblLoaiHieuXe] SET"
+        query &= " UPDATE [tblLOAIHIEUXE] SET"
         query &= " [TenLoaiHieuXe] = @TenLoaiHieuXe"
         query &= "WHERE "
         query &= " [MaLoaiHieuXe] = @MaLoaiHieuXe"
@@ -122,10 +122,44 @@ Public Class LoaiHieuXeDAL
         Return New Result(True) ' thanh cong
     End Function
 
+    Public Function selectALL(ByRef listLoaiHieuXe As List(Of LoaiHieuXeDTO)) As Result
+
+        Dim query As String = String.Empty
+        query &= " SELECT [MaLoaiHieuXe], [TenLoaiHieuXe]"
+        query &= " FROM [tblLOAIHIEUXE]"
+
+
+        Using conn As New SqlConnection(connectionString)
+            Using comm As New SqlCommand()
+                With comm
+                    .Connection = conn
+                    .CommandType = CommandType.Text
+                    .CommandText = query
+                End With
+                Try
+                    conn.Open()
+                    Dim reader As SqlDataReader
+                    reader = comm.ExecuteReader()
+                    If reader.HasRows = True Then
+                        listLoaiHieuXe.Clear()
+                        While reader.Read()
+                            listLoaiHieuXe.Add(New LoaiHieuXeDTO(reader("MaLoaiHieuXe"), reader("TenLoaiHieuXe")))
+                        End While
+                    End If
+                Catch ex As Exception
+                    Console.WriteLine(ex.StackTrace)
+                    conn.Close()
+                    ' them that bai!!!
+                    Return New Result(False, "Lấy tất cả loại hiệu xe không thành công", ex.StackTrace)
+                End Try
+            End Using
+        End Using
+        Return New Result(True) ' thanh cong
+    End Function
     Public Function delete(MaLoaiHieuXe As Integer) As Result
 
         Dim query As String = String.Empty
-        query &= " DELETE FROM [tblLoaiHocSinh] "
+        query &= " DELETE FROM [tblLOAIHIEUXE] "
         query &= " WHERE "
         query &= " [MaLoaiHieuXe] = @MaLoaiHieuXe"
 
@@ -135,7 +169,7 @@ Public Class LoaiHieuXeDAL
                     .Connection = conn
                     .CommandType = CommandType.Text
                     .CommandText = query
-                    .Parameters.AddWithValue("@MaHieuXe", MaLoaiHieuXe)
+                    .Parameters.AddWithValue("@MaLoaiHieuXe", MaLoaiHieuXe)
                 End With
                 Try
                     conn.Open()
@@ -151,11 +185,5 @@ Public Class LoaiHieuXeDAL
         Return New Result(True) ' thanh cong
     End Function
 
-    Public Function selectAll(ByRef listHieuXe As List(Of LoaiHieuXeDTO)) As Result
-        '1. verify data here!!
-
-        '2. insert to DB
-        Return LoaiHieuXe_DAL.selectAll(listHieuXe)
-    End Function
 
 End Class

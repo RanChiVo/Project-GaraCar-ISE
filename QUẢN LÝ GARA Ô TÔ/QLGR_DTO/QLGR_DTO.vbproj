@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="KhachHangDTO.vb" />
     <Compile Include="LoaiHieuXeDTO.vb" />
+    <Compile Include="ThamSoDTO.vb" />
     <Compile Include="XeDTO.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
