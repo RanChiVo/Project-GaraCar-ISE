@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="KhachHangBUS.vb" />
+    <Compile Include="KhachHangXeBUS.vb" />
     <Compile Include="LoaiHieuXeBUS.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -80,6 +81,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PhieuSuaChuaBUS.vb" />
+    <Compile Include="PhieuThuTienBUS.vb" />
+    <Compile Include="TaiKhoanBUS.vb" />
+    <Compile Include="ThamSoBUS.vb" />
+    <Compile Include="TienCongBUS.vb" />
+    <Compile Include="TraCuuBUS.vb" />
+    <Compile Include="VatTuPhuTungBUS.vb" />
     <Compile Include="XeBUS.vb" />
   </ItemGroup>
   <ItemGroup>

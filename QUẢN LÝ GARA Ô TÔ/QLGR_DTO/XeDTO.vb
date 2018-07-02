@@ -3,14 +3,24 @@
     Private strBienSo As String
     Private iLoaiHieuXe As Integer
     Private dateNgayTiepNhan As DateTime
+    Private strMaKH As String
+
 
     Public Sub New()
     End Sub
 
-    Public Sub New(strBienSo As String, iLoaiHieuXe As Integer, dateNgayTiepNhan As DateTime)
+
+    Public Sub New(strBienSo)
+
+        Me.strBienSo = strBienSo
+
+    End Sub
+
+    Public Sub New(strBienSo As String, iLoaiHieuXe As Integer, dateNgayTiepNhan As DateTime, strMaKH As String)
         Me.strBienSo = strBienSo
         Me.iLoaiHieuXe = iLoaiHieuXe
         Me.dateNgayTiepNhan = dateNgayTiepNhan
+        Me.strMaKH = strMaKH
     End Sub
 
     Public Property BienSo As String
@@ -39,5 +49,15 @@
             dateNgayTiepNhan = value
         End Set
     End Property
+
+    Public Property MaKH As String
+        Get
+            Return strMaKH
+        End Get
+        Set(value As String)
+            strMaKH = value
+        End Set
+    End Property
+
 
 End Class

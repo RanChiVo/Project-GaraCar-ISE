@@ -3,16 +3,31 @@ Imports QLGR_DTO
 Imports Utility
 
 Public Class LoaiHieuXeBUS
+
     Private LoaiHieuXe_DAL As LoaiHieuXeDAL
+
     Public Sub New()
         LoaiHieuXe_DAL = New LoaiHieuXeDAL()
     End Sub
+
     Public Sub New(connectionString As String)
         LoaiHieuXe_DAL = New LoaiHieuXeDAL(connectionString)
     End Sub
+
     Public Function isValidName(LoaiHieuXe_DTO As LoaiHieuXeDTO) As Boolean
 
-        If (LoaiHieuXe_DTO.TenHieuXe) Then
+        If (LoaiHieuXe_DTO.TenHieuXe.Length) < 1 Then
+            Return False
+        End If
+
+        Return True
+
+    End Function
+
+
+    Public Function isValidID(LoaiHieuXe_DTO As LoaiHieuXeDTO) As Boolean
+
+        If (LoaiHieuXe_DTO.MaHieuXe.ToString().Length) < 1 Then
             Return False
         End If
 
@@ -33,18 +48,21 @@ Public Class LoaiHieuXeBUS
         '2. insert to DB
         Return LoaiHieuXe_DAL.update(LoaiHieuXe_DTO)
     End Function
+
     Public Function delete(MaLoaiHieuXe As Integer) As Result
         '1. verify data here!!
 
         '2. insert to DB
         Return LoaiHieuXe_DAL.delete(MaLoaiHieuXe)
     End Function
+
     Public Function selectAll(ByRef listLoaiHieuXe As List(Of LoaiHieuXeDTO)) As Result
         '1. verify data here!!
 
         '2. insert to DB
-        Return LoaiHieuXe_DAL.selectAll(listLoaiHieuXe)
+        Return LoaiHieuXe_DAL.selectALL(listLoaiHieuXe)
     End Function
+
     Public Function getNextID(ByRef nextID As Integer) As Result
         Return LoaiHieuXe_DAL.getNextID(nextID)
     End Function

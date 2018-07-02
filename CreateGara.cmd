@@ -1,0 +1,1 @@
+SQLCMD -S DESKTOP-KG90A2I -E -i GaraDB01.sql

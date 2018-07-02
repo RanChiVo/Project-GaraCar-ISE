@@ -6,6 +6,11 @@
     Public Sub New()
     End Sub
 
+    Public Sub New(Maloai As Integer, tenloai As String)
+        iMaLoaiHieuXe = Maloai
+        strTenHieuXe = tenloai
+    End Sub
+
     Public Property MaHieuXe As Integer
         Get
             Return iMaLoaiHieuXe
@@ -23,4 +28,5 @@
             strTenHieuXe = value
         End Set
     End Property
+
 End Class
