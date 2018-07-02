@@ -11,6 +11,7 @@ Public Class ThamSo_BUS
     End Sub
 
     Public Function SelectThamSo(ByRef ThamSo_DTO As ThamSoDTO) As Result
+<<<<<<< HEAD
 
         Return thamSoDAL.SelectThamSo(ThamSo_DTO)
 
@@ -21,6 +22,11 @@ Public Class ThamSo_BUS
         Return thamSoDAL.update(ThamSo_DTO)
 
     End Function
+=======
+        Return thamSoDAL.SelectThamSo(ThamSo_DTO)
+    End Function
+
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
 
 
 End Class

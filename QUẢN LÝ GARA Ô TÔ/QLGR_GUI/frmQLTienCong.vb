@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Imports QLGR_BUS
 Imports QLGR_DTO
 Imports Utility
@@ -180,5 +181,8 @@ Public Class frmQLTienCong
         frmThemTienCong.Show()
 
     End Sub
+=======
+﻿Public Class frmQLTienCong
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
 
 End Class

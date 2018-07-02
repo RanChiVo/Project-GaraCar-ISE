@@ -22,10 +22,13 @@ Partial Class frmQLHieuXe
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+<<<<<<< HEAD
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmQLHieuXe))
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.dgvHieuXe = New System.Windows.Forms.DataGridView()
@@ -36,18 +39,27 @@ Partial Class frmQLHieuXe
         Me.btnXoa = New System.Windows.Forms.Button()
         Me.btnCapNhat = New System.Windows.Forms.Button()
         Me.btnDong = New System.Windows.Forms.Button()
+<<<<<<< HEAD
         Me.btnThem = New System.Windows.Forms.Button()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
         CType(Me.dgvHieuXe, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.BunifuGradientPanel1.SuspendLayout()
+=======
+        CType(Me.dgvHieuXe, System.ComponentModel.ISupportInitialize).BeginInit()
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+<<<<<<< HEAD
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(312, 9)
+=======
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(303, 9)
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(263, 35)
         Me.Label1.TabIndex = 0
@@ -56,9 +68,14 @@ Partial Class frmQLHieuXe
         'Label2
         '
         Me.Label2.AutoSize = True
+<<<<<<< HEAD
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(34, 59)
+=======
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(25, 59)
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(133, 18)
         Me.Label2.TabIndex = 1
@@ -66,6 +83,7 @@ Partial Class frmQLHieuXe
         '
         'dgvHieuXe
         '
+<<<<<<< HEAD
         Me.dgvHieuXe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgvHieuXe.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.dgvHieuXe.BackgroundColor = System.Drawing.Color.SteelBlue
@@ -102,13 +120,25 @@ Partial Class frmQLHieuXe
         Me.dgvHieuXe.RowHeadersWidth = 50
         Me.dgvHieuXe.Size = New System.Drawing.Size(364, 418)
         Me.dgvHieuXe.TabIndex = 16
+=======
+        Me.dgvHieuXe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvHieuXe.Location = New System.Drawing.Point(28, 80)
+        Me.dgvHieuXe.Name = "dgvHieuXe"
+        Me.dgvHieuXe.Size = New System.Drawing.Size(456, 417)
+        Me.dgvHieuXe.TabIndex = 2
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+<<<<<<< HEAD
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(524, 99)
+=======
+        Me.Label3.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(508, 104)
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(62, 16)
         Me.Label3.TabIndex = 3
@@ -117,9 +147,14 @@ Partial Class frmQLHieuXe
         'Label4
         '
         Me.Label4.AutoSize = True
+<<<<<<< HEAD
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(524, 157)
+=======
+        Me.Label4.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(508, 154)
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(67, 16)
         Me.Label4.TabIndex = 4
@@ -144,7 +179,11 @@ Partial Class frmQLHieuXe
         'btnXoa
         '
         Me.btnXoa.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.btnXoa.Location = New System.Drawing.Point(610, 289)
+=======
+        Me.btnXoa.Location = New System.Drawing.Point(629, 289)
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.btnXoa.Name = "btnXoa"
         Me.btnXoa.Size = New System.Drawing.Size(101, 43)
         Me.btnXoa.TabIndex = 8
@@ -154,7 +193,11 @@ Partial Class frmQLHieuXe
         'btnCapNhat
         '
         Me.btnCapNhat.Font = New System.Drawing.Font("Lucida Sans Unicode", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.btnCapNhat.Location = New System.Drawing.Point(465, 289)
+=======
+        Me.btnCapNhat.Location = New System.Drawing.Point(511, 289)
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.btnCapNhat.Name = "btnCapNhat"
         Me.btnCapNhat.Size = New System.Drawing.Size(101, 43)
         Me.btnCapNhat.TabIndex = 9
@@ -164,13 +207,18 @@ Partial Class frmQLHieuXe
         'btnDong
         '
         Me.btnDong.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+<<<<<<< HEAD
         Me.btnDong.Location = New System.Drawing.Point(610, 362)
+=======
+        Me.btnDong.Location = New System.Drawing.Point(747, 289)
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.btnDong.Name = "btnDong"
         Me.btnDong.Size = New System.Drawing.Size(101, 43)
         Me.btnDong.TabIndex = 10
         Me.btnDong.Text = "Đóng"
         Me.btnDong.UseVisualStyleBackColor = True
         '
+<<<<<<< HEAD
         'btnThem
         '
         Me.btnThem.Font = New System.Drawing.Font("Lucida Sans Unicode", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -201,17 +249,23 @@ Partial Class frmQLHieuXe
         Me.BunifuGradientPanel1.Size = New System.Drawing.Size(884, 561)
         Me.BunifuGradientPanel1.TabIndex = 18
         '
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         'frmQLHieuXe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(884, 561)
+<<<<<<< HEAD
         Me.Controls.Add(Me.btnThem)
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.Controls.Add(Me.btnDong)
         Me.Controls.Add(Me.btnCapNhat)
         Me.Controls.Add(Me.btnXoa)
         Me.Controls.Add(Me.txtTenLoaiHieuXe)
         Me.Controls.Add(Me.txtMaLoaiHieuXe)
+<<<<<<< HEAD
         Me.Controls.Add(Me.dgvHieuXe)
         Me.Controls.Add(Me.BunifuGradientPanel1)
         Me.Name = "frmQLHieuXe"
@@ -219,6 +273,16 @@ Partial Class frmQLHieuXe
         CType(Me.dgvHieuXe, System.ComponentModel.ISupportInitialize).EndInit()
         Me.BunifuGradientPanel1.ResumeLayout(False)
         Me.BunifuGradientPanel1.PerformLayout()
+=======
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.dgvHieuXe)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Name = "frmQLHieuXe"
+        Me.Text = "fmrQLHieuXe"
+        CType(Me.dgvHieuXe, System.ComponentModel.ISupportInitialize).EndInit()
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -234,6 +298,9 @@ Partial Class frmQLHieuXe
     Friend WithEvents btnXoa As Button
     Friend WithEvents btnCapNhat As Button
     Friend WithEvents btnDong As Button
+<<<<<<< HEAD
     Friend WithEvents btnThem As Button
     Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
 End Class

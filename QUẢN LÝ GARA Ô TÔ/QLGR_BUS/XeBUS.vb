@@ -2,6 +2,7 @@
 Imports QLGR_DTO
 Imports Utility
 
+<<<<<<< HEAD
 Public Class XeBUS
 
     Private Xe_DAL As XeDAL
@@ -18,12 +19,27 @@ Public Class XeBUS
         TraCuu_DAL = New TraCuuDAL(connectionString)
     End Sub
 
+=======
+
+Public Class XeBUS
+    Private Xe_DAL As XeDAL
+    Public Sub New()
+        Xe_DAL = New XeDAL()
+    End Sub
+    Public Sub New(connectionString As String)
+        Xe_DAL = New XeDAL(connectionString)
+    End Sub
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     Public Function isValidLicensePlate(Xe As XeDTO) As Boolean
 
         If (Xe.BienSo.Length < 1) Then
             Return False
         End If
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Return True
     End Function
 
@@ -34,6 +50,7 @@ Public Class XeBUS
         '2. insert to DB
         Return Xe_DAL.InsertXe(Xe_DTO)
 
+<<<<<<< HEAD
 
     End Function
 
@@ -80,12 +97,21 @@ Public Class XeBUS
         thamsoBUS.SelectThamSo(ThamSo_DTO)
 
         If (Xe_DAL.CountXe(XE_DTO) >= ThamSo_DTO.SoXeToiDa) Then
+=======
+    End Function
+
+
+    Public Function isValidName(Xe_DTO As XeDTO) As Boolean
+
+        If (Xe_DTO.HoTen.Length < 1) Then
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
             Return False
         End If
 
         Return True
     End Function
 
+<<<<<<< HEAD
     Public Function selectALL_ByBienSo(BienSo As String, ByRef listKhachHangXe As List(Of KhachHangXeDTO)) As Result
         '1. verify data here!!
 
@@ -201,6 +227,67 @@ Public Class XeBUS
 
         Return Xe_DAL.selectAllSC(ListXe)
 
+=======
+    Public Function isValidAddress(Xe_DTO As XeDTO) As Boolean
+
+        If (Xe_DTO.DiaChi.Length < 1) Then
+            Return False
+        End If
+
+        Return True
+    End Function
+    Public Function isValidPhone(Xe_DTO As XeDTO) As Boolean
+
+        If (Xe_DTO.SoDienThoai.Length < 1) Then
+            Return False
+        End If
+        Return True
+
+    End Function
+
+    Public Function isValidThebalance(Xe_DTO As XeDTO) As Boolean
+
+        If (Xe_DTO.SoTienNo.ToString().Length < 1) Then
+            Return False
+        End If
+
+        Return True
+
+
+    End Function
+    Public Function update(Xe As XeDTO) As Result
+        '1. verify data here!!
+
+        '2. insert to DB
+        Return Xe_DAL.update(Xe)
+    End Function
+    Public Function delete(HieuXe As Integer) As Result
+        '1. verify data here!!
+
+        '2. insert to DB
+        Return Xe_DAL.delete(HieuXe)
+    End Function
+    Public Function selectAll(ByRef listLoaiHieuXe As List(Of XeDTO)) As Result
+        '1. verify data here!!
+
+        '2. insert to DB
+        Return Xe_DAL.selectALLXe(listLoaiHieuXe)
+    End Function
+    Public Function selectALL_ByMaKH(iMaKH As Integer, ByRef listXe As List(Of XeDTO)) As Result
+        '1. verify data here!!
+
+        '2. insert to DB
+        Return Xe_DAL.selectALL_ByMaKH(iMaKH, listXe)
+    End Function
+    Public Function selectALL_ByHieuXe(MaLoaiHieuXe As Integer, ByRef listXe As List(Of XeDTO)) As Result
+        '1. verify data here!!
+
+        '2. insert to DB
+        Return Xe_DAL.selectALL_ByHieuXe(MaLoaiHieuXe, listXe)
+    End Function
+    Public Function Show() As DataTable
+        Return Xe_DAL.FilterData()
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     End Function
 
 End Class

@@ -48,7 +48,11 @@ Public Class LoaiHieuXeDAL
                     conn.Close()
                     ' them that bai!!!
                     nextID = 1
+<<<<<<< HEAD
                     Return New Result(False, "Lấy ID kế tiếp của Loại hiệu Xe không thành công", ex.StackTrace)
+=======
+                    Return New Result(False, "Lấy ID kế tiếp của Loại Xe không thành công", ex.StackTrace)
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
                 End Try
             End Using
         End Using
@@ -96,7 +100,11 @@ Public Class LoaiHieuXeDAL
         Dim query As String = String.Empty
         query &= " UPDATE [tblLOAIHIEUXE] SET"
         query &= " [TenLoaiHieuXe] = @TenLoaiHieuXe"
+<<<<<<< HEAD
         query &= " WHERE "
+=======
+        query &= "WHERE "
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         query &= " [MaLoaiHieuXe] = @MaLoaiHieuXe"
 
         Using conn As New SqlConnection(connectionString)

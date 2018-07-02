@@ -5,12 +5,18 @@
 
     Public Sub New()
     End Sub
+<<<<<<< HEAD
 
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     Public Sub New(Maloai As Integer, tenloai As String)
         iMaLoaiHieuXe = Maloai
         strTenHieuXe = tenloai
     End Sub
+<<<<<<< HEAD
 
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     Public Property MaHieuXe As Integer
         Get
             Return iMaLoaiHieuXe
@@ -28,5 +34,8 @@
             strTenHieuXe = value
         End Set
     End Property
+<<<<<<< HEAD
 
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
 End Class

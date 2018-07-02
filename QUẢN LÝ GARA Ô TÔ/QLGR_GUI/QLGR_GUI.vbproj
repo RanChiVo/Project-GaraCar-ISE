@@ -47,6 +47,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>..\..\..\..\download\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
@@ -71,11 +72,21 @@
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
+=======
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
+<<<<<<< HEAD
+=======
+    <Reference Include="System.Net.Http" />
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -92,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
+<<<<<<< HEAD
     <Compile Include="CRYRPLAPPHIEUTHUTIEN.vb">
       <DependentUpon>CRYRPLAPPHIEUTHUTIEN.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -116,16 +128,25 @@
       <DependentUpon>CrystalRPLAPPHIEUSUACHUA.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     <Compile Include="fmrQLHieuXe.Designer.vb">
       <DependentUpon>fmrQLHieuXe.vb</DependentUpon>
     </Compile>
     <Compile Include="fmrQLHieuXe.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmBaoCaoDoanhThu.Designer.vb">
       <DependentUpon>frmBaoCaoDoanhThu.vb</DependentUpon>
     </Compile>
     <Compile Include="frmBaoCaoDoanhThu.vb">
+=======
+    <Compile Include="frmBaoCaoDanhThu.Designer.vb">
+      <DependentUpon>frmBaoCaoDanhThu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoDanhThu.vb">
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBaoCaoTon.Designer.vb">
@@ -134,6 +155,7 @@
     <Compile Include="frmBaoCaoTon.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmDangNhap.Designer.vb">
       <DependentUpon>frmDangNhap.vb</DependentUpon>
     </Compile>
@@ -146,6 +168,8 @@
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     <Compile Include="frmPhieuSuaChua.Designer.vb">
       <DependentUpon>frmPhieuSuaChua.vb</DependentUpon>
     </Compile>
@@ -164,6 +188,15 @@
     <Compile Include="frmQLHieuXe.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="frmQLPhieuSuaChua.Designer.vb">
+      <DependentUpon>frmQLPhieuSuaChua.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLPhieuSuaChua.vb">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     <Compile Include="frmQLTienCong.Designer.vb">
       <DependentUpon>frmQLTienCong.vb</DependentUpon>
     </Compile>
@@ -182,6 +215,7 @@
     <Compile Include="frmQLXe.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmQuanLiSuaChua.Designer.vb">
       <DependentUpon>frmQuanLiSuaChua.vb</DependentUpon>
     </Compile>
@@ -206,6 +240,8 @@
     <Compile Include="frmThemVatTuPhuTung.vb">
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     <Compile Include="frmThemXe.Designer.vb">
       <DependentUpon>frmThemXe.vb</DependentUpon>
     </Compile>
@@ -218,12 +254,15 @@
     <Compile Include="frmTraCuuXe.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Lapphieusuachua.Designer.vb">
       <DependentUpon>Lapphieusuachua.vb</DependentUpon>
     </Compile>
     <Compile Include="Lapphieusuachua.vb">
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -239,6 +278,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="QLGRDataSet1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -288,16 +328,28 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBaoCaoDoanhThu.resx">
       <DependentUpon>frmBaoCaoDoanhThu.vb</DependentUpon>
+=======
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="fmrQLHieuXe.resx">
+      <DependentUpon>fmrQLHieuXe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoDanhThu.resx">
+      <DependentUpon>frmBaoCaoDanhThu.vb</DependentUpon>
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     </EmbeddedResource>
     <EmbeddedResource Include="frmBaoCaoTon.resx">
       <DependentUpon>frmBaoCaoTon.vb</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmDangNhap.resx">
       <DependentUpon>frmDangNhap.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     <EmbeddedResource Include="frmPhieuSuaChua.resx">
       <DependentUpon>frmPhieuSuaChua.vb</DependentUpon>
     </EmbeddedResource>
@@ -307,6 +359,12 @@
     <EmbeddedResource Include="frmQLHieuXe.resx">
       <DependentUpon>frmQLHieuXe.vb</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
+=======
+    <EmbeddedResource Include="frmQLPhieuSuaChua.resx">
+      <DependentUpon>frmQLPhieuSuaChua.vb</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     <EmbeddedResource Include="frmQLTienCong.resx">
       <DependentUpon>frmQLTienCong.vb</DependentUpon>
     </EmbeddedResource>
@@ -316,6 +374,7 @@
     <EmbeddedResource Include="frmQLXe.resx">
       <DependentUpon>frmQLXe.vb</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmQuanLiSuaChua.resx">
       <DependentUpon>frmQuanLiSuaChua.vb</DependentUpon>
     </EmbeddedResource>
@@ -328,21 +387,27 @@
     <EmbeddedResource Include="frmThemVatTuPhuTung.resx">
       <DependentUpon>frmThemVatTuPhuTung.vb</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     <EmbeddedResource Include="frmThemXe.resx">
       <DependentUpon>frmThemXe.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTraCuuXe.resx">
       <DependentUpon>frmTraCuuXe.vb</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Lapphieusuachua.resx">
       <DependentUpon>Lapphieusuachua.vb</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="ThayDoiSoLuongXeToiDa.resx">
       <DependentUpon>ThayDoiSoLuongXeToiDa.vb</DependentUpon>
     </EmbeddedResource>
@@ -352,6 +417,8 @@
     <EmbeddedResource Include="XUATPHIEUTHU.resx">
       <DependentUpon>XUATPHIEUTHU.vb</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -366,7 +433,10 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
+<<<<<<< HEAD
     <None Include="packages.config" />
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\QLGR_BUS\QLGR_BUS.vbproj">
@@ -382,6 +452,7 @@
       <Name>Utility</Name>
     </ProjectReference>
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <COMReference Include="CRQUERYENGINE">
       <Guid>{E4B81D51-FB89-4D07-84A3-00BA9B71D76E}</Guid>
@@ -638,5 +709,7 @@
   <ItemGroup>
     <None Include="Resources\car %281%29.png" />
   </ItemGroup>
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

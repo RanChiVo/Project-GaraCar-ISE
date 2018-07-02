@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿Imports System.Data.SqlClient
 Imports QLGR_BUS
 Imports QLGR_DTO
@@ -230,6 +231,10 @@ Public Class frmPhieuThuTien
             MessageBox.Show("Ban co the chua lap phieu vi the khong the in phieu")
 
         End If
+=======
+﻿Public Class frmPhieuThuTien
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
 
     End Sub
 End Class

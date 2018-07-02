@@ -23,8 +23,13 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Public Sub New()
+<<<<<<< HEAD
             MyBase.New(Global.Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows)
             Me.IsSingleInstance = true
+=======
+            MyBase.New(Global.Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.ApplicationDefined)
+            Me.IsSingleInstance = false
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
             Me.EnableVisualStyles = true
             Me.SaveMySettingsOnExit = true
             Me.ShutDownStyle = Global.Microsoft.VisualBasic.ApplicationServices.ShutdownMode.AfterMainFormCloses
@@ -32,7 +37,11 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
+<<<<<<< HEAD
             Me.MainForm = Global.QLGR_GUI.frmMain
+=======
+            Me.MainForm = Global.QLGR_GUI.frmQLXe
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         End Sub
     End Class
 End Namespace

@@ -55,6 +55,7 @@ Public Class ThamSoDAL
 
         Return New Result(True)
 
+<<<<<<< HEAD
     End Function
 
     Public Function update(ThamSo_DTO As ThamSoDTO) As Result
@@ -86,6 +87,9 @@ Public Class ThamSoDAL
             End Using
         End Using
         Return New Result(True) ' thanh cong
+=======
+
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     End Function
 
 

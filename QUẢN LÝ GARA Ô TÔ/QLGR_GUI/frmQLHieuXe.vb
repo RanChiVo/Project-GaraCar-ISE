@@ -7,17 +7,27 @@ Public Class frmQLHieuXe
 
     Private LoaiHieuXe_Bus As LoaiHieuXeBUS
 
+<<<<<<< HEAD
     Private Sub fmrQLHieuXe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+=======
+
+    Private Sub frmDanhSachLoaiHocSinh_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
 
         LoaiHieuXe_Bus = New LoaiHieuXeBUS()
         ' Load LoaiHocSinh list
         loadListLoaiHieuXe()
 
     End Sub
+<<<<<<< HEAD
 
     Public Sub loadListLoaiHieuXe()
         ' Load LoaiHocSinh list
 
+=======
+    Private Sub loadListLoaiHieuXe()
+        ' Load LoaiHocSinh list
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Dim listLoaiHieuXe = New List(Of LoaiHieuXeDTO)
         Dim result As Result
         result = LoaiHieuXe_Bus.selectAll(listLoaiHieuXe)
@@ -35,6 +45,7 @@ Public Class frmQLHieuXe
         dgvHieuXe.DataSource = listLoaiHieuXe
 
         Dim clMaLoaiHieuXe = New DataGridViewTextBoxColumn()
+<<<<<<< HEAD
         clMaLoaiHieuXe.Name = "MaHieuXe"
         clMaLoaiHieuXe.HeaderText = "Mã Loại"
         clMaLoaiHieuXe.DataPropertyName = "MaHieuXe"
@@ -48,6 +59,23 @@ Public Class frmQLHieuXe
 
     End Sub
 
+=======
+        clMaLoaiHieuXe.Name = "MaLoaiHieuXe"
+        clMaLoaiHieuXe.HeaderText = "Mã Loại"
+        clMaLoaiHieuXe.DataPropertyName = "MaLoaiHieuXe"
+        dgvHieuXe.Columns.Add(clMaLoaiHieuXe)
+
+        Dim clTenLoai = New DataGridViewTextBoxColumn()
+        clTenLoai.Name = "TenLoaiHieuXe"
+        clTenLoai.HeaderText = "Tên Loại Hiệu Xe"
+        clTenLoai.DataPropertyName = "TenLoaiHieuXe"
+        dgvHieuXe.Columns.Add(clTenLoai)
+
+    End Sub
+    Private Sub fmrQLHieuXe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
 
     Private Sub btnCapNhat_Click(sender As Object, e As EventArgs) Handles btnCapNhat.Click
         ' Get the current cell location.
@@ -66,7 +94,11 @@ Public Class frmQLHieuXe
 
                 '2. Business .....
                 If (LoaiHieuXe_Bus.isValidName(LoaiHieuXe_DTO) = False) Then
+<<<<<<< HEAD
                     MessageBox.Show("Tên Loại hiệu xe không đúng. Vui lòng kiểm tra lại", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+=======
+                    MessageBox.Show("Tên Loại học sinh không đúng. Vui lòng kiểm tra lại", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
                     txtTenLoaiHieuXe.Focus()
                     Return
                 End If
@@ -87,7 +119,11 @@ Public Class frmQLHieuXe
                     Catch ex As Exception
                         Console.WriteLine(ex.StackTrace)
                     End Try
+<<<<<<< HEAD
                     MessageBox.Show("Cập nhật hiệu xe thành công.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+=======
+                    MessageBox.Show("Cập nhật hiệu xe không thành công.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
                 Else
                     MessageBox.Show("Cập nhật hiều xe không thành công.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                     System.Console.WriteLine(result.SystemMessage)
@@ -170,6 +206,7 @@ Public Class frmQLHieuXe
         End If
     End Sub
 
+<<<<<<< HEAD
     Private Sub btnDong_Click(sender As Object, e As EventArgs) Handles btnDong.Click
 
         Me.Close()
@@ -183,4 +220,11 @@ Public Class frmQLHieuXe
 
     End Sub
 
+=======
+
+
+    Private Sub btnDong_Click(sender As Object, e As EventArgs) Handles btnDong.Click
+        Me.Close()
+    End Sub
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
 End Class

@@ -8,7 +8,10 @@
 
     Public Sub New()
     End Sub
+<<<<<<< HEAD
 
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     Public Sub New(strMaKH As String, strHoTen As String, strDiaChi As String, strSoDienThoai As String, strSoTienNo As Decimal)
         Me.strMaKH = strMaKH
         Me.strHoTen = strHoTen
@@ -16,6 +19,10 @@
         Me.strSoDienThoai = strSoDienThoai
         Me.strSoTienNo = strSoTienNo
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     End Sub
 
     Public Property MaKH As String
@@ -62,5 +69,8 @@
             strSoTienNo = value
         End Set
     End Property
+<<<<<<< HEAD
 
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
 End Class

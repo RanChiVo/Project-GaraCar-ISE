@@ -64,7 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="KhachHangBUS.vb" />
+<<<<<<< HEAD
     <Compile Include="KhachHangXeBUS.vb" />
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     <Compile Include="LoaiHieuXeBUS.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -81,6 +84,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="PhieuSuaChuaBUS.vb" />
     <Compile Include="PhieuThuTienBUS.vb" />
     <Compile Include="TaiKhoanBUS.vb" />
@@ -88,6 +92,9 @@
     <Compile Include="TienCongBUS.vb" />
     <Compile Include="TraCuuBUS.vb" />
     <Compile Include="VatTuPhuTungBUS.vb" />
+=======
+    <Compile Include="ThamSoBUS.vb" />
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     <Compile Include="XeBUS.vb" />
   </ItemGroup>
   <ItemGroup>

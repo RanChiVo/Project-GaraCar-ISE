@@ -1,4 +1,5 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
+<<<<<<< HEAD
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
   <Profiles />
   <Settings>
@@ -20,3 +21,11 @@
     </Setting>
   </Settings>
 </SettingsFile>
+=======
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" UseMySettingsClassName="true">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d

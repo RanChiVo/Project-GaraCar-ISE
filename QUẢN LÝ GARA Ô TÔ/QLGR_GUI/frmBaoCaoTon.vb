@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 
 Public Class frmBaoCaoTon
@@ -19,5 +20,8 @@ Public Class frmBaoCaoTon
         End Try
 
     End Sub
+=======
+﻿Public Class frmBaoCaoTon
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
 
 End Class

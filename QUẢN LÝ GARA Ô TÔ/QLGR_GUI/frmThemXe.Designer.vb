@@ -22,6 +22,7 @@ Partial Class frmThemXe
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+<<<<<<< HEAD
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmThemXe))
         Me.BunifuGradientPanel2 = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.BunifuGradientPanel1 = New Bunifu.Framework.UI.BunifuGradientPanel()
@@ -55,11 +56,19 @@ Partial Class frmThemXe
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.txtSoTienNo = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
+=======
+        Me.dtpNgayTiepNhan = New System.Windows.Forms.DateTimePicker()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtMaKH = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txtDiaChi = New System.Windows.Forms.Label()
         Me.txrHoTen = New System.Windows.Forms.Label()
+<<<<<<< HEAD
         Me.txtSoDienThoai = New System.Windows.Forms.TextBox()
         Me.txtDiaChiKH = New System.Windows.Forms.TextBox()
         Me.txtHoTen = New System.Windows.Forms.TextBox()
@@ -442,6 +451,77 @@ Partial Class frmThemXe
         Me.Label10.Size = New System.Drawing.Size(60, 16)
         Me.Label10.TabIndex = 17
         Me.Label10.Text = "Tiền nợ:"
+=======
+        Me.cbHieuXe = New System.Windows.Forms.ComboBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txtBienSo = New System.Windows.Forms.TextBox()
+        Me.txtSoDienThoai = New System.Windows.Forms.TextBox()
+        Me.txtDiaChiKH = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnThem = New System.Windows.Forms.Button()
+        Me.btnDong = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.txtSoTienNo = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtHoTen = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.dgvListXe = New System.Windows.Forms.DataGridView()
+        Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        CType(Me.dgvListXe, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'dtpNgayTiepNhan
+        '
+        Me.dtpNgayTiepNhan.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dtpNgayTiepNhan.Location = New System.Drawing.Point(157, 111)
+        Me.dtpNgayTiepNhan.Name = "dtpNgayTiepNhan"
+        Me.dtpNgayTiepNhan.Size = New System.Drawing.Size(210, 24)
+        Me.dtpNgayTiepNhan.TabIndex = 9
+        Me.dtpNgayTiepNhan.Value = New Date(2018, 6, 7, 0, 0, 0, 0)
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(40, 117)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(109, 16)
+        Me.Label6.TabIndex = 8
+        Me.Label6.Text = "Ngày tiếp nhận:"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(40, 76)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(61, 16)
+        Me.Label5.TabIndex = 7
+        Me.Label5.Text = "Hiệu xe:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(40, 39)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(58, 16)
+        Me.Label4.TabIndex = 6
+        Me.Label4.Text = "Biển số:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.AliceBlue
+        Me.Label2.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(154, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(88, 16)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Thông tin xe"
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         '
         'Label7
         '
@@ -491,6 +571,40 @@ Partial Class frmThemXe
         Me.txrHoTen.TabIndex = 11
         Me.txrHoTen.Text = "Họ tên:"
         '
+<<<<<<< HEAD
+=======
+        'cbHieuXe
+        '
+        Me.cbHieuXe.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbHieuXe.FormattingEnabled = True
+        Me.cbHieuXe.Location = New System.Drawing.Point(157, 69)
+        Me.cbHieuXe.Name = "cbHieuXe"
+        Me.cbHieuXe.Size = New System.Drawing.Size(210, 23)
+        Me.cbHieuXe.TabIndex = 10
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.cbHieuXe)
+        Me.Panel2.Controls.Add(Me.dtpNgayTiepNhan)
+        Me.Panel2.Controls.Add(Me.Label6)
+        Me.Panel2.Controls.Add(Me.Label5)
+        Me.Panel2.Controls.Add(Me.Label4)
+        Me.Panel2.Controls.Add(Me.txtBienSo)
+        Me.Panel2.Controls.Add(Me.Label2)
+        Me.Panel2.Location = New System.Drawing.Point(695, 47)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(376, 153)
+        Me.Panel2.TabIndex = 1
+        '
+        'txtBienSo
+        '
+        Me.txtBienSo.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBienSo.Location = New System.Drawing.Point(157, 31)
+        Me.txtBienSo.Name = "txtBienSo"
+        Me.txtBienSo.Size = New System.Drawing.Size(210, 24)
+        Me.txtBienSo.TabIndex = 3
+        '
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         'txtSoDienThoai
         '
         Me.txtSoDienThoai.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -507,6 +621,7 @@ Partial Class frmThemXe
         Me.txtDiaChiKH.Size = New System.Drawing.Size(210, 24)
         Me.txtDiaChiKH.TabIndex = 11
         '
+<<<<<<< HEAD
         'txtHoTen
         '
         Me.txtHoTen.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -515,6 +630,8 @@ Partial Class frmThemXe
         Me.txtHoTen.Size = New System.Drawing.Size(210, 24)
         Me.txtHoTen.TabIndex = 10
         '
+=======
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -526,6 +643,7 @@ Partial Class frmThemXe
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Thông tin khách hàng"
         '
+<<<<<<< HEAD
         'dgvListXe
         '
         Me.dgvListXe.BackgroundColor = System.Drawing.Color.AliceBlue
@@ -627,23 +745,115 @@ Partial Class frmThemXe
         Me.btnThem.TabIndex = 5
         Me.btnThem.Text = "Thêm"
         Me.btnThem.UseVisualStyleBackColor = False
+=======
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Unicode", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(294, -31)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(213, 35)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "TIẾP NHẬN XE"
+        '
+        'btnThem
+        '
+        Me.btnThem.Font = New System.Drawing.Font("Lucida Sans Unicode", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnThem.Location = New System.Drawing.Point(774, 472)
+        Me.btnThem.Name = "btnThem"
+        Me.btnThem.Size = New System.Drawing.Size(130, 48)
+        Me.btnThem.TabIndex = 5
+        Me.btnThem.Text = "Thêm"
+        Me.btnThem.UseVisualStyleBackColor = True
+        '
+        'btnDong
+        '
+        Me.btnDong.Font = New System.Drawing.Font("Lucida Sans Unicode", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDong.Location = New System.Drawing.Point(941, 472)
+        Me.btnDong.Name = "btnDong"
+        Me.btnDong.Size = New System.Drawing.Size(130, 48)
+        Me.btnDong.TabIndex = 4
+        Me.btnDong.Text = "Đóng"
+        Me.btnDong.UseVisualStyleBackColor = True
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.txtSoTienNo)
+        Me.Panel3.Controls.Add(Me.Label10)
+        Me.Panel3.Controls.Add(Me.Label7)
+        Me.Panel3.Controls.Add(Me.txtMaKH)
+        Me.Panel3.Controls.Add(Me.Label9)
+        Me.Panel3.Controls.Add(Me.txtDiaChi)
+        Me.Panel3.Controls.Add(Me.txrHoTen)
+        Me.Panel3.Controls.Add(Me.txtSoDienThoai)
+        Me.Panel3.Controls.Add(Me.txtDiaChiKH)
+        Me.Panel3.Controls.Add(Me.txtHoTen)
+        Me.Panel3.Controls.Add(Me.Label3)
+        Me.Panel3.Location = New System.Drawing.Point(695, 206)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(376, 243)
+        Me.Panel3.TabIndex = 2
+        '
+        'txtSoTienNo
+        '
+        Me.txtSoTienNo.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSoTienNo.Location = New System.Drawing.Point(161, 178)
+        Me.txtSoTienNo.Name = "txtSoTienNo"
+        Me.txtSoTienNo.Size = New System.Drawing.Size(210, 24)
+        Me.txtSoTienNo.TabIndex = 18
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Lucida Sans Unicode", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(32, 180)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(60, 16)
+        Me.Label10.TabIndex = 17
+        Me.Label10.Text = "Tiền nợ:"
+        '
+        'txtHoTen
+        '
+        Me.txtHoTen.Font = New System.Drawing.Font("Lucida Sans Unicode", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtHoTen.Location = New System.Drawing.Point(161, 67)
+        Me.txtHoTen.Name = "txtHoTen"
+        Me.txtHoTen.Size = New System.Drawing.Size(210, 24)
+        Me.txtHoTen.TabIndex = 10
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         '
         'Label8
         '
         Me.Label8.AutoSize = True
+<<<<<<< HEAD
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Lucida Sans Unicode", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(41, 9)
+=======
+        Me.Label8.Font = New System.Drawing.Font("Lucida Sans Unicode", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(44, 9)
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(213, 35)
         Me.Label8.TabIndex = 5
         Me.Label8.Text = "TIẾP NHẬN XE"
         '
+<<<<<<< HEAD
+=======
+        'dgvListXe
+        '
+        Me.dgvListXe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvListXe.Location = New System.Drawing.Point(12, 47)
+        Me.dgvListXe.Name = "dgvListXe"
+        Me.dgvListXe.Size = New System.Drawing.Size(677, 436)
+        Me.dgvListXe.TabIndex = 6
+        '
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
         'frmThemXe
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1094, 561)
+<<<<<<< HEAD
         Me.Controls.Add(Me.BunifuGradientPanel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "frmThemXe"
@@ -663,6 +873,24 @@ Partial Class frmThemXe
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
+=======
+        Me.Controls.Add(Me.dgvListXe)
+        Me.Controls.Add(Me.btnDong)
+        Me.Controls.Add(Me.btnThem)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel2)
+        Me.Name = "frmThemXe"
+        Me.Text = "frmThemXe"
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        CType(Me.dgvListXe, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
 
     End Sub
 
@@ -682,6 +910,10 @@ Partial Class frmThemXe
     Friend WithEvents txtSoDienThoai As TextBox
     Friend WithEvents txtDiaChiKH As TextBox
     Friend WithEvents Label3 As Label
+<<<<<<< HEAD
+=======
+    Friend WithEvents Label1 As Label
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
     Friend WithEvents btnThem As Button
     Friend WithEvents btnDong As Button
     Friend WithEvents Panel3 As Panel
@@ -689,6 +921,7 @@ Partial Class frmThemXe
     Friend WithEvents Label8 As Label
     Friend WithEvents txtSoTienNo As TextBox
     Friend WithEvents Label10 As Label
+<<<<<<< HEAD
     Friend WithEvents BunifuGradientPanel2 As Bunifu.Framework.UI.BunifuGradientPanel
     Friend WithEvents dgvListXe As DataGridView
     Friend WithEvents BunifuGradientPanel1 As Bunifu.Framework.UI.BunifuGradientPanel
@@ -718,4 +951,7 @@ Partial Class frmThemXe
     Friend WithEvents Label19 As Label
     Friend WithEvents btnThemXe As Button
     Friend WithEvents Label20 As Label
+=======
+    Friend WithEvents dgvListXe As DataGridView
+>>>>>>> d323ab7ba7f63f60c39be1ba115b7be6ef87ea7d
 End Class
