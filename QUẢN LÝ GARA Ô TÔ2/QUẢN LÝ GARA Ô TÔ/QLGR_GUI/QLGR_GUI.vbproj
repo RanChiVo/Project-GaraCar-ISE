@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CF9BC0E0-E30B-451A-9CBB-69935A280326}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>QLGR_GUI.My.MyApplication</StartupObject>
+    <RootNamespace>QLGR_GUI</RootNamespace>
+    <AssemblyName>QLGR_GUI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>QLGR_GUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>QLGR_GUI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\download\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Word2016.Interop.1.0.0\lib\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Word2016.Interop.1.0.0\lib\office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CRYRPLAPPHIEUTHUTIEN.vb">
+      <DependentUpon>CRYRPLAPPHIEUTHUTIEN.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CRYSTALBAOCAODOANHTHUTHANG.vb">
+      <DependentUpon>CRYSTALBAOCAODOANHTHUTHANG.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrystalRPBAOCAOTON.vb">
+      <DependentUpon>CrystalRPBAOCAOTON.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CrystalRPLAPPHIEUSUACHUA.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalRPLAPPHIEUSUACHUA.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="fmrQLHieuXe.Designer.vb">
+      <DependentUpon>fmrQLHieuXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fmrQLHieuXe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoDoanhThu.Designer.vb">
+      <DependentUpon>frmBaoCaoDoanhThu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoDoanhThu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoTon.Designer.vb">
+      <DependentUpon>frmBaoCaoTon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoTon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.Designer.vb">
+      <DependentUpon>frmDangNhap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuSuaChua.Designer.vb">
+      <DependentUpon>frmPhieuSuaChua.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuSuaChua.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhieuThuTien.Designer.vb">
+      <DependentUpon>frmPhieuThuTien.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhieuThuTien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLHieuXe.Designer.vb">
+      <DependentUpon>frmQLHieuXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLHieuXe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLTienCong.Designer.vb">
+      <DependentUpon>frmQLTienCong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLTienCong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLVatTuPhuTung.Designer.vb">
+      <DependentUpon>frmQLVatTuPhuTung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLVatTuPhuTung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLXe.Designer.vb">
+      <DependentUpon>frmQLXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLXe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLiSuaChua.Designer.vb">
+      <DependentUpon>frmQuanLiSuaChua.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuanLiSuaChua.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemHieuXe.Designer.vb">
+      <DependentUpon>frmThemHieuXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemHieuXe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemTienCong.Designer.vb">
+      <DependentUpon>frmThemTienCong.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemTienCong.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemVatTuPhuTung.Designer.vb">
+      <DependentUpon>frmThemVatTuPhuTung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemVatTuPhuTung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThemXe.Designer.vb">
+      <DependentUpon>frmThemXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmThemXe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTraCuuXe.Designer.vb">
+      <DependentUpon>frmTraCuuXe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTraCuuXe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lapphieusuachua.Designer.vb">
+      <DependentUpon>Lapphieusuachua.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lapphieusuachua.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QLGRDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLGRDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLGRDataSet1.vb">
+      <DependentUpon>QLGRDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ThayDoiSoLuongXeToiDa.Designer.vb">
+      <DependentUpon>ThayDoiSoLuongXeToiDa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ThayDoiSoLuongXeToiDa.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XemPSC.Designer.vb">
+      <DependentUpon>XemPSC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XemPSC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XUATPHIEUTHU.Designer.vb">
+      <DependentUpon>XUATPHIEUTHU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="XUATPHIEUTHU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CRYRPLAPPHIEUTHUTIEN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRYRPLAPPHIEUTHUTIEN.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CRYSTALBAOCAODOANHTHUTHANG.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRYSTALBAOCAODOANHTHUTHANG.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalRPBAOCAOTON.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalRPBAOCAOTON.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalRPLAPPHIEUSUACHUA.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalRPLAPPHIEUSUACHUA.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fmrQLHieuXe.resx">
+      <DependentUpon>fmrQLHieuXe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoDoanhThu.resx">
+      <DependentUpon>frmBaoCaoDoanhThu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoTon.resx">
+      <DependentUpon>frmBaoCaoTon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuSuaChua.resx">
+      <DependentUpon>frmPhieuSuaChua.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhieuThuTien.resx">
+      <DependentUpon>frmPhieuThuTien.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLHieuXe.resx">
+      <DependentUpon>frmQLHieuXe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLTienCong.resx">
+      <DependentUpon>frmQLTienCong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLVatTuPhuTung.resx">
+      <DependentUpon>frmQLVatTuPhuTung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLXe.resx">
+      <DependentUpon>frmQLXe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLiSuaChua.resx">
+      <DependentUpon>frmQuanLiSuaChua.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemHieuXe.resx">
+      <DependentUpon>frmThemHieuXe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemTienCong.resx">
+      <DependentUpon>frmThemTienCong.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemVatTuPhuTung.resx">
+      <DependentUpon>frmThemVatTuPhuTung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThemXe.resx">
+      <DependentUpon>frmThemXe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTraCuuXe.resx">
+      <DependentUpon>frmTraCuuXe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lapphieusuachua.resx">
+      <DependentUpon>Lapphieusuachua.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThayDoiSoLuongXeToiDa.resx">
+      <DependentUpon>ThayDoiSoLuongXeToiDa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemPSC.resx">
+      <DependentUpon>XemPSC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XUATPHIEUTHU.resx">
+      <DependentUpon>XUATPHIEUTHU.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QLGR_BUS\QLGR_BUS.vbproj">
+      <Project>{2c1cf3ce-4999-4ea2-b14c-4d7d6ebf1df7}</Project>
+      <Name>QLGR_BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QLGR_DTO\QLGR_DTO.vbproj">
+      <Project>{a8561101-be11-47d2-b9be-c0db9505ff8a}</Project>
+      <Name>QLGR_DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.vbproj">
+      <Project>{50cae960-896f-4b43-9ba5-2abf9e905236}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="CRQUERYENGINE">
+      <Guid>{E4B81D51-FB89-4D07-84A3-00BA9B71D76E}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CRYPTEXTLib">
+      <Guid>{7444C709-39BF-11D1-8CD9-00C04FC29D45}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalAnalysisRequestModelLib">
+      <Guid>{3FD134DF-56E0-4860-B065-BF986A086176}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalAnalysisXmlSerializeLib">
+      <Guid>{2743F9AF-ED45-4CA5-8625-2709B908D63C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalDocMgmtUndoManagerLib">
+      <Guid>{5DF0757C-75A4-4227-AF7B-0479FC6E7A55}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalPrintControlLib">
+      <Guid>{62862E3F-F35B-455E-9459-49EAADE80A25}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsCommonObjectModelLib">
+      <Guid>{FDB9B69E-BA79-4B13-9E96-8373AF162AEA}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsControllersLib">
+      <Guid>{FA810FF5-70DA-4F98-A5E3-387D9577EF24}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsCubeDefModelLib">
+      <Guid>{44AD71D4-4905-491D-B179-B5D91EB57374}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsDataDefModelLib">
+      <Guid>{9B2F3E7B-8D45-47E8-95D3-3A9C1B22437F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsDTSAgentLib">
+      <Guid>{3D5D05F6-E97D-43A0-90DC-5D8A6C6C6DB1}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsLocalConnectionMgrLib">
+      <Guid>{EC39F6C4-A9F2-4341-806B-1529E049A945}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsObjectFactoryLib">
+      <Guid>{A25D82D0-1501-4A89-BA92-B7E5B002EC4F}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CrystalReportsReportDefModelLib">
+      <Guid>{BF40B97D-06EA-4AB1-91DE-18CB29A2B25A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="imjpcmntlLib">
+      <Guid>{3E15C914-280E-4550-A5C0-8C1A8BF8AD52}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="PAGEOBJECTMODELLib">
+      <Guid>{237F4BEC-8AE5-41E1-AE84-B194E4670597}</Guid>
+      <VersionMajor>13</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="PROMPTINGLib">
+      <Guid>{8106BAD6-FB6E-49D5-8368-3F7030C9F6E7}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLGRDataSet1.xsc">
+      <DependentUpon>QLGRDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLGRDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLGRDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLGRDataSet1.xss">
+      <DependentUpon>QLGRDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attachment_28791266.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mm-group-logo-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-gears.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
