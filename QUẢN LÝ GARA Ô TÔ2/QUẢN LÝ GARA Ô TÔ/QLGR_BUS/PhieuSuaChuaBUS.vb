@@ -1,4 +1,4 @@
-﻿Imports QLGR_DAL
+Imports QLGR_DAL
 Imports QLGR_DTO
 Imports Utility
 Public Class PhieuSuaChuaBUS
@@ -6,6 +6,12 @@ Public Class PhieuSuaChuaBUS
 
     Public Sub New()
         phieuSuaChuaDAL = New PhieuSuaChuaDAL()
+
+        phieuSuaChuaDAL = New PhieuSuaChuaDAL()
+        phieuSuaChuaDAL = New PhieuSuaChuaDAL()
+        phieuSuaChuaDAL = New PhieuSuaChuaDAL()
+        phieuSuaChuaDAL = New PhieuSuaChuaDAL()
+
     End Sub
 
     Public Sub New(connectionString As String)
